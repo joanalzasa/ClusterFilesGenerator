@@ -1,0 +1,13 @@
+!/bin/bash
+#$ -S /bin/bash
+#$ -N RKEDAc
+#$ -q serial.q
+#$ -o out/RKEDAc.$TASK_ID.dat
+#$ -e err/RKEDAc.$TASK_ID.dat
+#$ -cwd
+#$ -t 1-2
+
+PARAMS[1]="500 taillard_instances/ tai50_10_0.fsp dynamic/ dynProfile-n50-c10-Cayley3.txt -1 5 0 0.02 results/ tai50_10_0-dynProfile-n50-c10-Cayley3-currentbest_0.02_0.06-elt0--0 0.06 1 "
+PARAMS[2]="500 taillard_instances/ tai50_10_0.fsp dynamic/ dynProfile-n50-c10-Cayley45.txt -1 5 0 0.02 results/ tai50_10_0-dynProfile-n50-c10-Cayley45-currentbest_0.02_0.06-elt0--0 0.06 1 "
+
+./a.out ${PARAMS[$SGE_TASK_ID]}

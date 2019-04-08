@@ -1,0 +1,47 @@
+!/bin/bash
+#$ -S /bin/bash
+#$ -N RKEDAc
+#$ -q all.q
+#$ -o out/RKEDAc.$TASK_ID.dat
+#$ -e err/RKEDAc.$TASK_ID.dat
+#$ -cwd
+#$ -t 1-36
+
+PARAMS[1]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c3-Cayley100.txt -1 500 0 0.002 results/ tai500_20_0-dynProfile-n500-c3-Cayley100-currentbest_0.002_0.01-elt0--0 0.01 1529337743744 "
+PARAMS[2]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c3-Cayley100.txt -1 500 0 0.002 results/ tai500_20_0-dynProfile-n500-c3-Cayley100-currentbest_0.002_0.01-elt0--1 0.01 1528878945813 "
+PARAMS[3]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c3-Cayley100.txt -1 500 0 0.002 results/ tai500_20_0-dynProfile-n500-c3-Cayley100-currentbest_0.002_0.02-elt0--0 0.02 1529892867684 "
+PARAMS[4]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c3-Cayley100.txt -1 500 0 0.002 results/ tai500_20_0-dynProfile-n500-c3-Cayley100-currentbest_0.002_0.02-elt0--1 0.02 1529372940747 "
+PARAMS[5]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c3-Cayley100.txt -1 500 0 0.002 results/ tai500_20_0-dynProfile-n500-c3-Cayley100-currentbest_0.002_0.03-elt0--0 0.03 1528519326260 "
+PARAMS[6]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c3-Cayley100.txt -1 500 0 0.002 results/ tai500_20_0-dynProfile-n500-c3-Cayley100-currentbest_0.002_0.03-elt0--1 0.03 1528266069048 "
+PARAMS[7]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c3-Cayley100.txt -1 500 0 0.005 results/ tai500_20_0-dynProfile-n500-c3-Cayley100-currentbest_0.005_0.01-elt0--0 0.01 1526895990916 "
+PARAMS[8]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c3-Cayley100.txt -1 500 0 0.005 results/ tai500_20_0-dynProfile-n500-c3-Cayley100-currentbest_0.005_0.01-elt0--1 0.01 1527434643405 "
+PARAMS[9]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c3-Cayley100.txt -1 500 0 0.005 results/ tai500_20_0-dynProfile-n500-c3-Cayley100-currentbest_0.005_0.02-elt0--0 0.02 1527091615355 "
+PARAMS[10]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c3-Cayley100.txt -1 500 0 0.005 results/ tai500_20_0-dynProfile-n500-c3-Cayley100-currentbest_0.005_0.02-elt0--1 0.02 1527204547018 "
+PARAMS[11]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c3-Cayley100.txt -1 500 0 0.005 results/ tai500_20_0-dynProfile-n500-c3-Cayley100-currentbest_0.005_0.03-elt0--0 0.03 1530215115408 "
+PARAMS[12]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c3-Cayley100.txt -1 500 0 0.005 results/ tai500_20_0-dynProfile-n500-c3-Cayley100-currentbest_0.005_0.03-elt0--1 0.03 1529511588372 "
+PARAMS[13]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c3-Cayley100.txt -1 500 0 0.01 results/ tai500_20_0-dynProfile-n500-c3-Cayley100-currentbest_0.01_0.01-elt0--0 0.01 1530759838195 "
+PARAMS[14]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c3-Cayley100.txt -1 500 0 0.01 results/ tai500_20_0-dynProfile-n500-c3-Cayley100-currentbest_0.01_0.01-elt0--1 0.01 1529060244412 "
+PARAMS[15]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c3-Cayley100.txt -1 500 0 0.01 results/ tai500_20_0-dynProfile-n500-c3-Cayley100-currentbest_0.01_0.02-elt0--0 0.02 1527769828328 "
+PARAMS[16]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c3-Cayley100.txt -1 500 0 0.01 results/ tai500_20_0-dynProfile-n500-c3-Cayley100-currentbest_0.01_0.02-elt0--1 0.02 1530903786704 "
+PARAMS[17]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c3-Cayley100.txt -1 500 0 0.01 results/ tai500_20_0-dynProfile-n500-c3-Cayley100-currentbest_0.01_0.03-elt0--0 0.03 1529315035305 "
+PARAMS[18]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c3-Cayley100.txt -1 500 0 0.01 results/ tai500_20_0-dynProfile-n500-c3-Cayley100-currentbest_0.01_0.03-elt0--1 0.03 1529359196265 "
+PARAMS[19]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c10-Cayley250.txt -1 500 0 0.002 results/ tai500_20_0-dynProfile-n500-c10-Cayley250-currentbest_0.002_0.01-elt0--0 0.01 1528787751039 "
+PARAMS[20]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c10-Cayley250.txt -1 500 0 0.002 results/ tai500_20_0-dynProfile-n500-c10-Cayley250-currentbest_0.002_0.01-elt0--1 0.01 1527264357400 "
+PARAMS[21]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c10-Cayley250.txt -1 500 0 0.002 results/ tai500_20_0-dynProfile-n500-c10-Cayley250-currentbest_0.002_0.02-elt0--0 0.02 1527878940981 "
+PARAMS[22]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c10-Cayley250.txt -1 500 0 0.002 results/ tai500_20_0-dynProfile-n500-c10-Cayley250-currentbest_0.002_0.02-elt0--1 0.02 1527742243358 "
+PARAMS[23]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c10-Cayley250.txt -1 500 0 0.002 results/ tai500_20_0-dynProfile-n500-c10-Cayley250-currentbest_0.002_0.03-elt0--0 0.03 1529840632597 "
+PARAMS[24]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c10-Cayley250.txt -1 500 0 0.002 results/ tai500_20_0-dynProfile-n500-c10-Cayley250-currentbest_0.002_0.03-elt0--1 0.03 1529766749198 "
+PARAMS[25]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c10-Cayley250.txt -1 500 0 0.005 results/ tai500_20_0-dynProfile-n500-c10-Cayley250-currentbest_0.005_0.01-elt0--0 0.01 1529723399178 "
+PARAMS[26]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c10-Cayley250.txt -1 500 0 0.005 results/ tai500_20_0-dynProfile-n500-c10-Cayley250-currentbest_0.005_0.01-elt0--1 0.01 1530242565592 "
+PARAMS[27]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c10-Cayley250.txt -1 500 0 0.005 results/ tai500_20_0-dynProfile-n500-c10-Cayley250-currentbest_0.005_0.02-elt0--0 0.02 1529305251494 "
+PARAMS[28]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c10-Cayley250.txt -1 500 0 0.005 results/ tai500_20_0-dynProfile-n500-c10-Cayley250-currentbest_0.005_0.02-elt0--1 0.02 1528789264192 "
+PARAMS[29]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c10-Cayley250.txt -1 500 0 0.005 results/ tai500_20_0-dynProfile-n500-c10-Cayley250-currentbest_0.005_0.03-elt0--0 0.03 1527703413775 "
+PARAMS[30]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c10-Cayley250.txt -1 500 0 0.005 results/ tai500_20_0-dynProfile-n500-c10-Cayley250-currentbest_0.005_0.03-elt0--1 0.03 1528609438288 "
+PARAMS[31]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c10-Cayley250.txt -1 500 0 0.01 results/ tai500_20_0-dynProfile-n500-c10-Cayley250-currentbest_0.01_0.01-elt0--0 0.01 1529688075047 "
+PARAMS[32]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c10-Cayley250.txt -1 500 0 0.01 results/ tai500_20_0-dynProfile-n500-c10-Cayley250-currentbest_0.01_0.01-elt0--1 0.01 1528124968785 "
+PARAMS[33]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c10-Cayley250.txt -1 500 0 0.01 results/ tai500_20_0-dynProfile-n500-c10-Cayley250-currentbest_0.01_0.02-elt0--0 0.02 1529007289456 "
+PARAMS[34]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c10-Cayley250.txt -1 500 0 0.01 results/ tai500_20_0-dynProfile-n500-c10-Cayley250-currentbest_0.01_0.02-elt0--1 0.02 1528593896254 "
+PARAMS[35]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c10-Cayley250.txt -1 500 0 0.01 results/ tai500_20_0-dynProfile-n500-c10-Cayley250-currentbest_0.01_0.03-elt0--0 0.03 1527118401904 "
+PARAMS[36]="5000 taillard_instances/ tai500_20_0.fsp dynamic/ dynProfile-n500-c10-Cayley250.txt -1 500 0 0.01 results/ tai500_20_0-dynProfile-n500-c10-Cayley250-currentbest_0.01_0.03-elt0--1 0.03 1528284937176 "
+
+./a.out ${PARAMS[$SGE_TASK_ID]}
